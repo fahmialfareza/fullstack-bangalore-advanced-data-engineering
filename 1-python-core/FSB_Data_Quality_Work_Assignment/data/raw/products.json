@@ -1,0 +1,74 @@
+[
+  {
+    "product_id": "P001",
+    "name": " Laptop Stand ",
+    "price": "175000",
+    "category": "Accessories"
+  },
+  {
+    "product_id": "P002",
+    "name": "Mechanical Keyboard",
+    "price": 650000,
+    "category": "Accessories"
+  },
+  {
+    "product_id": "P003",
+    "name": "Wireless Mouse",
+    "price": "225000.50",
+    "category": "Accessories"
+  },
+  {
+    "product_id": "P004",
+    "name": "Monitor 24 inch",
+    "price": 2100000,
+    "category": "Electronics"
+  },
+  {
+    "product_id": "P005",
+    "name": "USB-C Hub",
+    "price": "350000",
+    "category": "Electronics"
+  },
+  {
+    "product_id": "P006",
+    "name": "Webcam",
+    "price": 450000,
+    "category": "Electronics"
+  },
+  {
+    "product_id": "P007",
+    "name": "Desk Lamp",
+    "price": "125000",
+    "category": "Home Office"
+  },
+  {
+    "product_id": "P008",
+    "name": "Notebook",
+    "price": 35000,
+    "category": "Stationery"
+  },
+  {
+    "product_id": "P009",
+    "name": "Pen Set",
+    "price": "25000",
+    "category": "Stationery"
+  },
+  {
+    "product_id": "P010",
+    "name": "Office Chair",
+    "price": 1250000,
+    "category": "Furniture"
+  },
+  {
+    "product_id": "",
+    "name": "Mystery Item",
+    "price": 10000,
+    "category": "Unknown"
+  },
+  {
+    "product_id": "P011",
+    "name": "Broken Price",
+    "price": "-5000",
+    "category": "Unknown"
+  }
+]

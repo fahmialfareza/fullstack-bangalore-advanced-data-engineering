@@ -1,0 +1,126 @@
+networks:
+  data_net:
+    driver: bridge
+
+volumes:
+  pgdata:
+  dbeaver_data:
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow That's one one theory that I get so by gathering all of the money and after recovering I calculated based on the normal months it's kind of still negative after the whole recovery but the next month it should be normal you agree with me a little process meaning which I think come from what we found before in my table those who yeah that's answering the question on August so that's why August lower other than the subscriptions between August and July and August until September rights there but also in the July there's also the one that is terminated there but I think it's could be a natural cost like payment fail they don't have enough balance but there's also this one that pass the grace period which is when it's run terminated and those terminated we don't get it anymore for July August in September right so that I'm I'm not sure how much but there's a natural like canceled one also some of them must be missing from this and then we recovered on September and on September there is also some terminated so that's why I'm saying that it's not gonna be fully recovered yeah it will be lower than the normal still like if you put this the projected fifty eight K if we put them back to the before the the missing one I think it's not gonna be still add up to the normal so because we the charter you so the number that you produce forty eight thousand the extra is only ten thousand yes yeah something like that it's like ten thousand put back
+      POSTGRES_DB: airflow
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airflow -d airflow"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - data_net
+    restart: always
+
+  dbeaver:
+    image: dbeaver/cloudbeaver:latest
+    container_name: dbeaver
+    restart: always
+    ports:
+      - "8978:8978"
+    volumes:
+      - dbeaver_data:/opt/cloudbeaver/workspace
+    networks:
+      - data_net
+
+  airflow-init:
+    image: apache/airflow:2.8.1
+    container_name: airflow-init
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__WEBSERVER__SECRET_KEY: my_secret_key_123
+      _AIRFLOW_DB_UPGRADE: "true"
+      _AIRFLOW_WWW_USER_CREATE: "true"
+      _AIRFLOW_WWW_USER_USERNAME: admin
+      _AIRFLOW_WWW_USER_PASSWORD: admin
+      _AIRFLOW_WWW_USER_FIRSTNAME: admin
+      _AIRFLOW_WWW_USER_LASTNAME: admin
+      _AIRFLOW_WWW_USER_EMAIL: admin@example.com
+      _AIRFLOW_WWW_USER_ROLE: Admin
+      _PIP_ADDITIONAL_REQUIREMENTS: "pandas sqlalchemy psycopg2-binary openpyxl backports.zoneinfo pytz"
+    command: version
+    networks:
+      - data_net
+
+  airflow-webserver:
+    image: apache/airflow:2.8.1
+    container_name: airflow-webserver
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__WEBSERVER__SECRET_KEY: my_secret_key_123
+      _PIP_ADDITIONAL_REQUIREMENTS: "pandas sqlalchemy psycopg2-binary openpyxl"
+    ports:
+      - "8080:8080"
+    volumes:
+      # ubah path disini
+      - /Users/fahmialfareza/Code/learning/data-engineering/fullstack-bangalore-advanced-data-engineering/9-belajar-etl/scripts:/opt/airflow/scripts
+      - ./dags:/opt/airflow/dags
+    command: webserver
+    networks:
+      - data_net
+    restart: always
+
+  airflow-scheduler:
+    image: apache/airflow:2.8.1
+    container_name: airflow-scheduler
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__WEBSERVER__SECRET_KEY: my_secret_key_123
+      _PIP_ADDITIONAL_REQUIREMENTS: "pandas sqlalchemy psycopg2-binary openpyxl"
+    volumes:
+      # ubah path disini
+      - /Users/fahmialfareza/Code/learning/data-engineering/fullstack-bangalore-advanced-data-engineering/9-belajar-etl/scripts:/opt/airflow/scripts
+      - ./dags:/opt/airflow/dags
+    command: scheduler
+    networks:
+      - data_net
+    restart: always
+
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jupyter
+    ports:
+      - "8888:8888"
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"
+      JUPYTER_TOKEN: ""
+      JUPYTER_PASSWORD: ""
+    command: start-notebook.sh --NotebookApp.token='' --NotebookApp.password='' --NotebookApp.allow_remote_access=True
+    volumes:
+      # ubah path disini
+      - /Users/fahmialfareza/Code/learning/data-engineering/fullstack-bangalore-advanced-data-engineering/9-belajar-etl/notebooks:/home/jovyan/work
+      - /Users/fahmialfareza/Code/learning/data-engineering/fullstack-bangalore-advanced-data-engineering/9-belajar-etl/python_scripts:/home/jovyan/scripts
+      - ./requirements.txt:/tmp/requirements.txt
+
+    networks:
+      - data_net
+    restart: always

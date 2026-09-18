@@ -1,0 +1,22 @@
+[
+  {
+    "raw_index": 14,
+    "row": {
+      "user_id": "",
+      "name": "No ID",
+      "email": "noid@mail.com",
+      "city": "Bandung"
+    },
+    "reason": "missing user_id"
+  },
+  {
+    "raw_index": 15,
+    "row": {
+      "user_id": "U002",
+      "name": "Duplicate Bima",
+      "email": "dup@mail.com",
+      "city": "Jakarta"
+    },
+    "reason": "duplicate user_id"
+  }
+]

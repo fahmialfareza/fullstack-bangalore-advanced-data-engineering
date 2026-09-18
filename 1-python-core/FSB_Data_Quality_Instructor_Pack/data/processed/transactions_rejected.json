@@ -1,0 +1,35 @@
+[
+  {
+    "raw_index": 5,
+    "row": {
+      "tx_id": "T006",
+      "user_id": "U006",
+      "product_id": "P006",
+      "quantity": "two",
+      "tx_date": "2026-08-02"
+    },
+    "reason": "invalid quantity"
+  },
+  {
+    "raw_index": 6,
+    "row": {
+      "tx_id": "T007",
+      "user_id": "U007",
+      "product_id": "P007",
+      "quantity": 0,
+      "tx_date": "2026-08-03"
+    },
+    "reason": "invalid quantity"
+  },
+  {
+    "raw_index": 14,
+    "row": {
+      "tx_id": "",
+      "user_id": "U014",
+      "product_id": "P004",
+      "quantity": 1,
+      "tx_date": "2026-08-05"
+    },
+    "reason": "missing tx_id"
+  }
+]

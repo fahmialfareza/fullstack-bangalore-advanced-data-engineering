@@ -1,0 +1,21 @@
+product_id,nama,kategori,harga,harga_modal
+P01,Kopi Bubuk 200g,grocery,32000,21000
+P02,Beras Premium 5kg,grocery,78000,64000
+P03,Minyak Goreng 2L,grocery,38000,32000
+P04,Susu UHT 1L,grocery,21000,16000
+P05,Kaos Polos Katun,fashion,75000,32000
+P06,Kemeja Flanel,fashion,189000,88000
+P07,Celana Chino,fashion,265000,130000
+P08,Sepatu Sneakers,fashion,549000,295000
+P09,TWS Earbuds,elektronik,320000,235000
+P10,Power Bank 20000mAh,elektronik,285000,210000
+P11,Keyboard Mekanik,elektronik,720000,540000
+P12,SSD 1TB,elektronik,1250000,1010000
+P13,Rice Cooker 1.8L,rumah,385000,270000
+P14,Kipas Angin Berdiri,rumah,310000,215000
+P15,Setrika Uap,rumah,245000,168000
+P16,Lampu Meja LED,rumah,125000,72000
+P17,Matras Yoga,olahraga,165000,92000
+P18,Dumbbell 5kg,olahraga,195000,140000
+P19,Botol Minum 1L,olahraga,89000,48000
+P20,Raket Badminton,olahraga,430000,285000

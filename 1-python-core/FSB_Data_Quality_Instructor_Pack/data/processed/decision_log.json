@@ -1,0 +1,218 @@
+[
+  {
+    "entity": "users",
+    "id": "U001",
+    "field": "name",
+    "raw": "  Rani Putri  ",
+    "action": "FIX",
+    "clean": "Rani Putri",
+    "reason": "trim whitespace"
+  },
+  {
+    "entity": "users",
+    "id": "U001",
+    "field": "email",
+    "raw": "RANI@MAIL.COM",
+    "action": "FIX",
+    "clean": "rani@mail.com",
+    "reason": "trim/lower email"
+  },
+  {
+    "entity": "users",
+    "id": "U002",
+    "field": "city",
+    "raw": " Jakarta ",
+    "action": "FIX",
+    "clean": "Jakarta",
+    "reason": "trim whitespace"
+  },
+  {
+    "entity": "users",
+    "id": "U003",
+    "field": "name",
+    "raw": "",
+    "action": "NULL",
+    "clean": null,
+    "reason": "empty text"
+  },
+  {
+    "entity": "users",
+    "id": "U003",
+    "field": "email",
+    "raw": "citra-at-mail.com",
+    "action": "NULL",
+    "clean": null,
+    "reason": "invalid email"
+  },
+  {
+    "entity": "users",
+    "id": "U005",
+    "field": "email",
+    "raw": " eka@mail.com ",
+    "action": "FIX",
+    "clean": "eka@mail.com",
+    "reason": "trim/lower email"
+  },
+  {
+    "entity": "users",
+    "id": "U006",
+    "field": "email",
+    "raw": "farah@mail",
+    "action": "NULL",
+    "clean": null,
+    "reason": "invalid email"
+  },
+  {
+    "entity": "users",
+    "id": "U008",
+    "field": "name",
+    "raw": " Hana ",
+    "action": "FIX",
+    "clean": "Hana",
+    "reason": "trim whitespace"
+  },
+  {
+    "entity": "users",
+    "id": null,
+    "field": "user_id",
+    "raw": "",
+    "action": "DROP",
+    "clean": null,
+    "reason": "missing user_id"
+  },
+  {
+    "entity": "users",
+    "id": "U002",
+    "field": "user_id",
+    "raw": "U002",
+    "action": "DROP",
+    "clean": null,
+    "reason": "duplicate user_id"
+  },
+  {
+    "entity": "products",
+    "id": "P001",
+    "field": "name",
+    "raw": " Laptop Stand ",
+    "action": "FIX",
+    "clean": "Laptop Stand",
+    "reason": "trim whitespace"
+  },
+  {
+    "entity": "products",
+    "id": "P001",
+    "field": "price",
+    "raw": "175000",
+    "action": "FIX",
+    "clean": 175000.0,
+    "reason": "numeric conversion"
+  },
+  {
+    "entity": "products",
+    "id": "P003",
+    "field": "price",
+    "raw": "225000.50",
+    "action": "FIX",
+    "clean": 225000.5,
+    "reason": "numeric conversion"
+  },
+  {
+    "entity": "products",
+    "id": "P005",
+    "field": "price",
+    "raw": "350000",
+    "action": "FIX",
+    "clean": 350000.0,
+    "reason": "numeric conversion"
+  },
+  {
+    "entity": "products",
+    "id": "P007",
+    "field": "price",
+    "raw": "125000",
+    "action": "FIX",
+    "clean": 125000.0,
+    "reason": "numeric conversion"
+  },
+  {
+    "entity": "products",
+    "id": "P009",
+    "field": "price",
+    "raw": "25000",
+    "action": "FIX",
+    "clean": 25000.0,
+    "reason": "numeric conversion"
+  },
+  {
+    "entity": "products",
+    "id": null,
+    "field": "product_id",
+    "raw": "",
+    "action": "DROP",
+    "clean": null,
+    "reason": "missing product_id"
+  },
+  {
+    "entity": "products",
+    "id": "P011",
+    "field": "price",
+    "raw": "-5000",
+    "action": "DROP",
+    "clean": null,
+    "reason": "invalid price"
+  },
+  {
+    "entity": "transactions",
+    "id": "T002",
+    "field": "quantity",
+    "raw": "2",
+    "action": "FIX",
+    "clean": 2,
+    "reason": "integer conversion"
+  },
+  {
+    "entity": "transactions",
+    "id": "T004",
+    "field": "quantity",
+    "raw": "1",
+    "action": "FIX",
+    "clean": 1,
+    "reason": "integer conversion"
+  },
+  {
+    "entity": "transactions",
+    "id": "T006",
+    "field": "quantity",
+    "raw": "two",
+    "action": "DROP",
+    "clean": null,
+    "reason": "invalid quantity"
+  },
+  {
+    "entity": "transactions",
+    "id": "T007",
+    "field": "quantity",
+    "raw": 0,
+    "action": "DROP",
+    "clean": null,
+    "reason": "invalid quantity"
+  },
+  {
+    "entity": "transactions",
+    "id": "T009",
+    "field": "quantity",
+    "raw": "4",
+    "action": "FIX",
+    "clean": 4,
+    "reason": "integer conversion"
+  },
+  {
+    "entity": "transactions",
+    "id": null,
+    "field": "tx_id",
+    "raw": "",
+    "action": "DROP",
+    "clean": null,
+    "reason": "missing tx_id"
+  }
+]

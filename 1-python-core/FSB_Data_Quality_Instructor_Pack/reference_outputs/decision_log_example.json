@@ -1,0 +1,92 @@
+[
+  {
+    "entity": "users",
+    "id": "U001",
+    "field": "name",
+    "raw": "  Rani Putri  ",
+    "action": "FIX",
+    "clean": "Rani Putri",
+    "reason": "trim whitespace"
+  },
+  {
+    "entity": "users",
+    "id": "U001",
+    "field": "email",
+    "raw": "RANI@MAIL.COM",
+    "action": "FIX",
+    "clean": "rani@mail.com",
+    "reason": "trim/lower email"
+  },
+  {
+    "entity": "users",
+    "id": "U002",
+    "field": "city",
+    "raw": " Jakarta ",
+    "action": "FIX",
+    "clean": "Jakarta",
+    "reason": "trim whitespace"
+  },
+  {
+    "entity": "users",
+    "id": "U003",
+    "field": "name",
+    "raw": "",
+    "action": "NULL",
+    "clean": null,
+    "reason": "empty text"
+  },
+  {
+    "entity": "users",
+    "id": "U003",
+    "field": "email",
+    "raw": "citra-at-mail.com",
+    "action": "NULL",
+    "clean": null,
+    "reason": "invalid email"
+  },
+  {
+    "entity": "users",
+    "id": "U005",
+    "field": "email",
+    "raw": " eka@mail.com ",
+    "action": "FIX",
+    "clean": "eka@mail.com",
+    "reason": "trim/lower email"
+  },
+  {
+    "entity": "users",
+    "id": "U006",
+    "field": "email",
+    "raw": "farah@mail",
+    "action": "NULL",
+    "clean": null,
+    "reason": "invalid email"
+  },
+  {
+    "entity": "users",
+    "id": "U008",
+    "field": "name",
+    "raw": " Hana ",
+    "action": "FIX",
+    "clean": "Hana",
+    "reason": "trim whitespace"
+  },
+  {
+    "entity": "users",
+    "id": null,
+    "field": "user_id",
+    "raw": "",
+    "action": "DROP",
+    "clean": null,
+    "reason": "missing user_id"
+  },
+  {
+    "entity": "users",
+    "id": "U002",
+    "field": "user_id",
+    "raw": "U002",
+    "action": "DROP",
+    "clean": null,
+    "reason": "duplicate user_id"
+  }
+]

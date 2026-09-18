@@ -1,0 +1,17 @@
+{
+  "users": {
+    "raw": 16,
+    "clean": 14,
+    "rejected": 2
+  },
+  "products": {
+    "raw": 12,
+    "clean": 10,
+    "rejected": 2
+  },
+  "transactions": {
+    "raw": 15,
+    "clean": 12,
+    "rejected": 3
+  }
+}

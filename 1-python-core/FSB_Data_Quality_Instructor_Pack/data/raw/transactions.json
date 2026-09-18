@@ -1,0 +1,107 @@
+[
+  {
+    "tx_id": "T001",
+    "user_id": "U001",
+    "product_id": "P001",
+    "quantity": 1,
+    "tx_date": "2026-08-01"
+  },
+  {
+    "tx_id": "T002",
+    "user_id": "U002",
+    "product_id": "P002",
+    "quantity": "2",
+    "tx_date": "2026-08-01"
+  },
+  {
+    "tx_id": "T003",
+    "user_id": "U003",
+    "product_id": "P003",
+    "quantity": 1,
+    "tx_date": "2026-08-01"
+  },
+  {
+    "tx_id": "T004",
+    "user_id": "U004",
+    "product_id": "P004",
+    "quantity": "1",
+    "tx_date": "2026-08-02"
+  },
+  {
+    "tx_id": "T005",
+    "user_id": "U005",
+    "product_id": "P005",
+    "quantity": 3,
+    "tx_date": "2026-08-02"
+  },
+  {
+    "tx_id": "T006",
+    "user_id": "U006",
+    "product_id": "P006",
+    "quantity": "two",
+    "tx_date": "2026-08-02"
+  },
+  {
+    "tx_id": "T007",
+    "user_id": "U007",
+    "product_id": "P007",
+    "quantity": 0,
+    "tx_date": "2026-08-03"
+  },
+  {
+    "tx_id": "T008",
+    "user_id": "U008",
+    "product_id": "P008",
+    "quantity": 5,
+    "tx_date": "2026-08-03"
+  },
+  {
+    "tx_id": "T009",
+    "user_id": "U009",
+    "product_id": "P009",
+    "quantity": "4",
+    "tx_date": "2026-08-03"
+  },
+  {
+    "tx_id": "T010",
+    "user_id": "U010",
+    "product_id": "P010",
+    "quantity": 1,
+    "tx_date": "2026-08-04"
+  },
+  {
+    "tx_id": "T011",
+    "user_id": "U011",
+    "product_id": "P001",
+    "quantity": 2,
+    "tx_date": "2026-08-04"
+  },
+  {
+    "tx_id": "T012",
+    "user_id": "U012",
+    "product_id": "P002",
+    "quantity": 1,
+    "tx_date": "2026-08-04"
+  },
+  {
+    "tx_id": "T013",
+    "user_id": "U013",
+    "product_id": "P003",
+    "quantity": 2,
+    "tx_date": "2026-08-05"
+  },
+  {
+    "tx_id": "T014",
+    "user_id": "U999",
+    "product_id": "P001",
+    "quantity": 1,
+    "tx_date": "2026-08-05"
+  },
+  {
+    "tx_id": "",
+    "user_id": "U014",
+    "product_id": "P004",
+    "quantity": 1,
+    "tx_date": "2026-08-05"
+  }
+]

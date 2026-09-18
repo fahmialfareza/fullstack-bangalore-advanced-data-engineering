@@ -1,0 +1,22 @@
+[
+  {
+    "raw_index": 10,
+    "row": {
+      "product_id": "",
+      "name": "Mystery Item",
+      "price": 10000,
+      "category": "Unknown"
+    },
+    "reason": "missing product_id"
+  },
+  {
+    "raw_index": 11,
+    "row": {
+      "product_id": "P011",
+      "name": "Broken Price",
+      "price": "-5000",
+      "category": "Unknown"
+    },
+    "reason": "invalid price"
+  }
+]

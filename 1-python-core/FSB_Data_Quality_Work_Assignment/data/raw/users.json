@@ -1,0 +1,98 @@
+[
+  {
+    "user_id": " U001 ",
+    "name": "  Rani Putri  ",
+    "email": "RANI@MAIL.COM",
+    "city": "Bandung"
+  },
+  {
+    "user_id": "U002",
+    "name": "Bima",
+    "email": "bima@mail.com",
+    "city": " Jakarta "
+  },
+  {
+    "user_id": "U003",
+    "name": "",
+    "email": "citra-at-mail.com",
+    "city": "Surabaya"
+  },
+  {
+    "user_id": "U004",
+    "name": "Dimas",
+    "email": "dimas@mail.com",
+    "city": null
+  },
+  {
+    "user_id": "U005",
+    "name": "Eka",
+    "email": " eka@mail.com ",
+    "city": "Yogyakarta"
+  },
+  {
+    "user_id": "U006",
+    "name": "Farah",
+    "email": "farah@mail",
+    "city": "Medan"
+  },
+  {
+    "user_id": "U007",
+    "name": "Gilang",
+    "email": null,
+    "city": "Semarang"
+  },
+  {
+    "user_id": "U008",
+    "name": " Hana ",
+    "email": "hana@mail.com",
+    "city": "Bali"
+  },
+  {
+    "user_id": "U009",
+    "name": "Indra",
+    "email": "indra@mail.com",
+    "city": "Makassar"
+  },
+  {
+    "user_id": "U010",
+    "name": "Joko",
+    "email": "joko@mail.com",
+    "city": "Bogor"
+  },
+  {
+    "user_id": "U011",
+    "name": "Kirana",
+    "email": "kirana@mail.com",
+    "city": "Depok"
+  },
+  {
+    "user_id": "U012",
+    "name": "Lukman",
+    "email": "lukman@mail.com",
+    "city": "Malang"
+  },
+  {
+    "user_id": "U013",
+    "name": "Maya",
+    "email": "maya@mail.com",
+    "city": "Solo"
+  },
+  {
+    "user_id": "U014",
+    "name": "Nadia",
+    "email": "nadia@mail.com",
+    "city": "Bekasi"
+  },
+  {
+    "user_id": "",
+    "name": "No ID",
+    "email": "noid@mail.com",
+    "city": "Bandung"
+  },
+  {
+    "user_id": "U002",
+    "name": "Duplicate Bima",
+    "email": "dup@mail.com",
+    "city": "Jakarta"
+  }
+]
