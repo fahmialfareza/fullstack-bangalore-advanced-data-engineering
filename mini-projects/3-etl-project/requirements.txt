@@ -1,0 +1,14 @@
+pandas==2.2.2
+numpy==1.26.4
+
+sqlalchemy==2.0.30
+psycopg2-binary==2.9.9
+psycopg[binary]
+
+jupyter
+notebook
+ipykernel
+openpyxl
+
+apache-airflow-providers-postgres
+runcell
