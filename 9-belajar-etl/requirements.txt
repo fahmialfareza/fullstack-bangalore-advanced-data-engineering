@@ -10,3 +10,4 @@ ipykernel
 openpyxl
 
 apache-airflow-providers-postgres
+fg-data-profiling
