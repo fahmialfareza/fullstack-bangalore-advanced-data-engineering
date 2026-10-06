@@ -1,0 +1,6 @@
+ipykernel
+
+requests
+psycopg2-binary
+
+kafka-python
