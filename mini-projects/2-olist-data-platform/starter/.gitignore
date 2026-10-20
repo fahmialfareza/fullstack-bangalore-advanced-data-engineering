@@ -1,0 +1,14 @@
+.env
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+deck/node_modules/
+data/raw/*.csv
+data/silver/
+data/quarantine/
+data/local/
+.venv/
+outputs/*.json
+outputs/*.parquet
+!outputs/.gitkeep
