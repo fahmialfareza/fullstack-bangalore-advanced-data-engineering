@@ -1,0 +1,13 @@
+{
+  "python": "3.12.14",
+  "spark": "4.0.1",
+  "java": "17.0.12",
+  "master": "local[2]",
+  "rows_files": 10000,
+  "rows_spill": 10000,
+  "repeats": 3,
+  "application_id": "local-1792921721279",
+  "driver_max_heap_bytes": 1073741824,
+  "created": "2026-10-25T16:48:56.616851",
+  "output": "F:\\programming\\ngajar\\full_stack_bangalore\\sesi 17 Data Lake MinIO\\sesi16\\lab\\outputs\\20261025_164831_storage_c42eeb8f"
+}

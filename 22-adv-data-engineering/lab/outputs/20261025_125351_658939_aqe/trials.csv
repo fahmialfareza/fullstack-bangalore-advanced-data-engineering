@@ -1,0 +1,3 @@
+variant,repeat,total_seconds,correct,materialize_seconds
+aqe_off,1,1.2047151000001577,True,
+aqe_on,1,0.30306560000008176,True,

@@ -1,0 +1,50 @@
+[
+  {
+    "experiment": "cache",
+    "variant": "no_cache",
+    "repeat": 1,
+    "seconds": 0.35168530000009923,
+    "materialize_seconds": 0.0,
+    "correct": true
+  },
+  {
+    "experiment": "cache",
+    "variant": "cache",
+    "repeat": 1,
+    "seconds": 0.36588929999993525,
+    "materialize_seconds": 0.07311429999981556,
+    "correct": true
+  },
+  {
+    "experiment": "cache",
+    "variant": "cache",
+    "repeat": 2,
+    "seconds": 0.3788978000000043,
+    "materialize_seconds": 0.06721049999987372,
+    "correct": true
+  },
+  {
+    "experiment": "cache",
+    "variant": "no_cache",
+    "repeat": 2,
+    "seconds": 0.3058049999999639,
+    "materialize_seconds": 0.0,
+    "correct": true
+  },
+  {
+    "experiment": "cache",
+    "variant": "no_cache",
+    "repeat": 3,
+    "seconds": 0.2560425000001487,
+    "materialize_seconds": 0.0,
+    "correct": true
+  },
+  {
+    "experiment": "cache",
+    "variant": "cache",
+    "repeat": 3,
+    "seconds": 0.3128074999999626,
+    "materialize_seconds": 0.04665660000000571,
+    "correct": true
+  }
+]

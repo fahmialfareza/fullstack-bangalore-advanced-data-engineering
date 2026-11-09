@@ -1,0 +1,21 @@
+{
+  "completed": true,
+  "rows": 10000,
+  "repeats": 3,
+  "checks": [
+    "reference",
+    "sort-merge vs broadcast",
+    "repartition/coalesce",
+    "shuffle partitions",
+    "AQE final plan",
+    "cache results",
+    "skew total rows",
+    "filter/select",
+    "intentional failure",
+    "spill observed and results equal",
+    "small files exact content equal",
+    "resource comparison and report"
+  ],
+  "measured_trials": 39,
+  "spark_stopped": true
+}

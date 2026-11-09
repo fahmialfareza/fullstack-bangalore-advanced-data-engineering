@@ -1,0 +1,15 @@
+[
+  {
+    "variant": "no_cache",
+    "repeat": 1,
+    "total_seconds": 0.33558210000001054,
+    "correct": true
+  },
+  {
+    "variant": "cache",
+    "repeat": 1,
+    "total_seconds": 0.4392454000003454,
+    "correct": true,
+    "materialize_seconds": 0.09085980000008931
+  }
+]

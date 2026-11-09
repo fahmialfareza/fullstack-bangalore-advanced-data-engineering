@@ -1,0 +1,38 @@
+[
+  {
+    "variant": "baseline",
+    "repeat": 1,
+    "total_seconds": 0.27050409999992553,
+    "correct": true
+  },
+  {
+    "variant": "broadcast",
+    "repeat": 1,
+    "total_seconds": 0.10463740000022881,
+    "correct": true
+  },
+  {
+    "variant": "broadcast",
+    "repeat": 2,
+    "total_seconds": 0.11829500000021653,
+    "correct": true
+  },
+  {
+    "variant": "baseline",
+    "repeat": 2,
+    "total_seconds": 0.23737069999970117,
+    "correct": true
+  },
+  {
+    "variant": "baseline",
+    "repeat": 3,
+    "total_seconds": 0.23923629999990226,
+    "correct": true
+  },
+  {
+    "variant": "broadcast",
+    "repeat": 3,
+    "total_seconds": 0.09597100000019054,
+    "correct": true
+  }
+]

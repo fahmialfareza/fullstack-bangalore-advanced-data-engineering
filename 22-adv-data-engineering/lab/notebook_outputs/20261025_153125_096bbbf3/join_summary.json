@@ -1,0 +1,20 @@
+[
+  {
+    "experiment": "join",
+    "variant": "sort_merge",
+    "median_seconds": 0.2587945000000218,
+    "min_seconds": 0.22611080000001493,
+    "max_seconds": 0.2727353000000221,
+    "runs": 3,
+    "correct": true
+  },
+  {
+    "experiment": "join",
+    "variant": "broadcast",
+    "median_seconds": 0.12939150000011068,
+    "min_seconds": 0.10698180000008506,
+    "max_seconds": 0.1381539999999859,
+    "runs": 3,
+    "correct": true
+  }
+]

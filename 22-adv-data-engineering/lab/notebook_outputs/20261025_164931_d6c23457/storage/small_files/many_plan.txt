@@ -1,0 +1,36 @@
+== Physical Plan ==
+* HashAggregate (5)
++- Exchange (4)
+   +- * HashAggregate (3)
+      +- * ColumnarToRow (2)
+         +- Scan parquet  (1)
+
+
+(1) Scan parquet 
+Output [1]: [amount#3236L]
+Batched: true
+Location: InMemoryFileIndex [file:/F:/programming/ngajar/full_stack_bangalore/sesi 17 Data Lake MinIO/sesi16/lab/notebook_outputs/20261025_164931_d6c23457/storage/small_files/many]
+ReadSchema: struct<amount:bigint>
+
+(2) ColumnarToRow [codegen id : 1]
+Input [1]: [amount#3236L]
+
+(3) HashAggregate [codegen id : 1]
+Input [1]: [amount#3236L]
+Keys: []
+Functions [1]: [partial_sum(amount#3236L)]
+Aggregate Attributes [1]: [sum#3242L]
+Results [1]: [sum#3243L]
+
+(4) Exchange
+Input [1]: [sum#3243L]
+Arguments: SinglePartition, ENSURE_REQUIREMENTS, [plan_id=5437]
+
+(5) HashAggregate [codegen id : 2]
+Input [1]: [sum#3243L]
+Keys: []
+Functions [1]: [sum(amount#3236L)]
+Aggregate Attributes [1]: [sum(amount#3236L)#3239L]
+Results [1]: [sum(amount#3236L)#3239L AS sum(amount)#3240L]
+
+

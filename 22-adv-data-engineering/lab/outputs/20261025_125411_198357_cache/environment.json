@@ -1,0 +1,17 @@
+{
+  "spark_version": "4.0.1",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "java_version": "17.0.12",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "master": "local[2]",
+  "rows": 10000,
+  "repeats": 1,
+  "app_id": "local-1792907661370",
+  "ui_url": "http://kubernetes.docker.internal:4040",
+  "timer_scope": "action only; cache candidate includes materialization and three actions",
+  "limitations": [
+    "synthetic data",
+    "local default; not a production cluster benchmark",
+    "OS cache and JVM state are not reset between trials"
+  ]
+}

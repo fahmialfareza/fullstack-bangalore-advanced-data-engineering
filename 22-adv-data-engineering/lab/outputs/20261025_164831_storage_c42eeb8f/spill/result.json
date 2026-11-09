@@ -1,0 +1,192 @@
+{
+  "rows": 10000,
+  "repeats": 3,
+  "thresholds": {
+    "normal_buffer": 2147483647,
+    "forced_spill": 512
+  },
+  "in_memory_threshold_both": 128,
+  "trials": [
+    {
+      "label": "trial1_normal_buffer",
+      "seconds": 0.14104870000028313,
+      "jobs": [
+        2
+      ],
+      "stages": [
+        4,
+        5
+      ],
+      "tasks": 3,
+      "executor_cpu_seconds": 0.015625,
+      "task_elapsed_seconds": 0.051,
+      "disk_spill_bytes": 0,
+      "memory_spill_bytes": 0,
+      "peak_task_execution_bytes": 8912880,
+      "shuffle_read_bytes": 51717,
+      "shuffle_write_bytes": 51717,
+      "input_bytes": 0,
+      "output_bytes": 0,
+      "variant": "normal_buffer",
+      "correct": true,
+      "phase": "trial1"
+    },
+    {
+      "label": "trial1_forced_spill",
+      "seconds": 0.23909350000030827,
+      "jobs": [
+        3
+      ],
+      "stages": [
+        6,
+        7
+      ],
+      "tasks": 3,
+      "executor_cpu_seconds": 0.109375,
+      "task_elapsed_seconds": 0.148,
+      "disk_spill_bytes": 52374,
+      "memory_spill_bytes": 159383248,
+      "peak_task_execution_bytes": 8912880,
+      "shuffle_read_bytes": 51717,
+      "shuffle_write_bytes": 51717,
+      "input_bytes": 0,
+      "output_bytes": 0,
+      "variant": "forced_spill",
+      "correct": true,
+      "phase": "trial1"
+    },
+    {
+      "label": "trial2_forced_spill",
+      "seconds": 0.2419566999997187,
+      "jobs": [
+        4
+      ],
+      "stages": [
+        8,
+        9
+      ],
+      "tasks": 3,
+      "executor_cpu_seconds": 0.09375,
+      "task_elapsed_seconds": 0.127,
+      "disk_spill_bytes": 52374,
+      "memory_spill_bytes": 159383248,
+      "peak_task_execution_bytes": 8912880,
+      "shuffle_read_bytes": 51717,
+      "shuffle_write_bytes": 51717,
+      "input_bytes": 0,
+      "output_bytes": 0,
+      "variant": "forced_spill",
+      "correct": true,
+      "phase": "trial2"
+    },
+    {
+      "label": "trial2_normal_buffer",
+      "seconds": 0.11070329999984097,
+      "jobs": [
+        5
+      ],
+      "stages": [
+        10,
+        11
+      ],
+      "tasks": 3,
+      "executor_cpu_seconds": 0.015625,
+      "task_elapsed_seconds": 0.032,
+      "disk_spill_bytes": 0,
+      "memory_spill_bytes": 0,
+      "peak_task_execution_bytes": 8912880,
+      "shuffle_read_bytes": 51717,
+      "shuffle_write_bytes": 51717,
+      "input_bytes": 0,
+      "output_bytes": 0,
+      "variant": "normal_buffer",
+      "correct": true,
+      "phase": "trial2"
+    },
+    {
+      "label": "trial3_normal_buffer",
+      "seconds": 0.1228160000000571,
+      "jobs": [
+        6
+      ],
+      "stages": [
+        12,
+        13
+      ],
+      "tasks": 3,
+      "executor_cpu_seconds": 0.0,
+      "task_elapsed_seconds": 0.041,
+      "disk_spill_bytes": 0,
+      "memory_spill_bytes": 0,
+      "peak_task_execution_bytes": 8912880,
+      "shuffle_read_bytes": 51717,
+      "shuffle_write_bytes": 51717,
+      "input_bytes": 0,
+      "output_bytes": 0,
+      "variant": "normal_buffer",
+      "correct": true,
+      "phase": "trial3"
+    },
+    {
+      "label": "trial3_forced_spill",
+      "seconds": 0.16567679999934626,
+      "jobs": [
+        7
+      ],
+      "stages": [
+        14,
+        15
+      ],
+      "tasks": 3,
+      "executor_cpu_seconds": 0.078125,
+      "task_elapsed_seconds": 0.119,
+      "disk_spill_bytes": 52374,
+      "memory_spill_bytes": 159383248,
+      "peak_task_execution_bytes": 8912880,
+      "shuffle_read_bytes": 51717,
+      "shuffle_write_bytes": 51717,
+      "input_bytes": 0,
+      "output_bytes": 0,
+      "variant": "forced_spill",
+      "correct": true,
+      "phase": "trial3"
+    }
+  ],
+  "summary": [
+    {
+      "variant": "normal_buffer",
+      "runs": 3,
+      "correct": true,
+      "median_seconds": 0.1228160000000571,
+      "median_executor_cpu_seconds": 0.015625,
+      "median_task_elapsed_seconds": 0.041,
+      "median_peak_task_execution_bytes": 8912880,
+      "median_disk_spill_bytes": 0,
+      "median_memory_spill_bytes": 0,
+      "median_shuffle_read_bytes": 51717,
+      "median_shuffle_write_bytes": 51717,
+      "median_input_bytes": 0,
+      "median_tasks": 3,
+      "min_seconds": 0.11070329999984097,
+      "max_seconds": 0.14104870000028313
+    },
+    {
+      "variant": "forced_spill",
+      "runs": 3,
+      "correct": true,
+      "median_seconds": 0.23909350000030827,
+      "median_executor_cpu_seconds": 0.09375,
+      "median_task_elapsed_seconds": 0.127,
+      "median_peak_task_execution_bytes": 8912880,
+      "median_disk_spill_bytes": 52374,
+      "median_memory_spill_bytes": 159383248,
+      "median_shuffle_read_bytes": 51717,
+      "median_shuffle_write_bytes": 51717,
+      "median_input_bytes": 0,
+      "median_tasks": 3,
+      "min_seconds": 0.16567679999934626,
+      "max_seconds": 0.2419566999997187
+    }
+  ],
+  "limitation": "Spill dipicu dengan konfigurasi internal Spark 4.0.1 untuk demo, bukan OOM alami atau rekomendasi produksi."
+}

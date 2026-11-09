@@ -1,0 +1,259 @@
+{
+  "rows": 10000,
+  "repeats": 3,
+  "inventory": {
+    "many": {
+      "files": 32,
+      "total_bytes": 90420,
+      "min_bytes": 2809,
+      "max_bytes": 2850,
+      "average_bytes": 2825.625
+    },
+    "compact": {
+      "files": 2,
+      "total_bytes": 51760,
+      "min_bytes": 25847,
+      "max_bytes": 25913,
+      "average_bytes": 25880.0
+    }
+  },
+  "trials": [
+    {
+      "label": "trial1_read_many",
+      "seconds": 0.2117428999999902,
+      "jobs": [
+        101,
+        102
+      ],
+      "stages": [
+        240,
+        241,
+        242
+      ],
+      "tasks": 4,
+      "executor_cpu_seconds": 0.109375,
+      "task_elapsed_seconds": 0.123,
+      "disk_spill_bytes": 0,
+      "memory_spill_bytes": 0,
+      "peak_task_execution_bytes": 0,
+      "shuffle_read_bytes": 142,
+      "shuffle_write_bytes": 142,
+      "input_bytes": 126108,
+      "output_bytes": 0,
+      "variant": "many",
+      "correct": true,
+      "phase": "trial1"
+    },
+    {
+      "label": "trial1_read_compact",
+      "seconds": 0.15262780000011844,
+      "jobs": [
+        103,
+        104
+      ],
+      "stages": [
+        243,
+        244,
+        245
+      ],
+      "tasks": 4,
+      "executor_cpu_seconds": 0.015625,
+      "task_elapsed_seconds": 0.027,
+      "disk_spill_bytes": 0,
+      "memory_spill_bytes": 0,
+      "peak_task_execution_bytes": 0,
+      "shuffle_read_bytes": 142,
+      "shuffle_write_bytes": 142,
+      "input_bytes": 54768,
+      "output_bytes": 0,
+      "variant": "compact",
+      "correct": true,
+      "phase": "trial1"
+    },
+    {
+      "label": "trial2_read_compact",
+      "seconds": 0.13912789999994857,
+      "jobs": [
+        105,
+        106
+      ],
+      "stages": [
+        246,
+        247,
+        248
+      ],
+      "tasks": 4,
+      "executor_cpu_seconds": 0.015625,
+      "task_elapsed_seconds": 0.033,
+      "disk_spill_bytes": 0,
+      "memory_spill_bytes": 0,
+      "peak_task_execution_bytes": 0,
+      "shuffle_read_bytes": 142,
+      "shuffle_write_bytes": 142,
+      "input_bytes": 54768,
+      "output_bytes": 0,
+      "variant": "compact",
+      "correct": true,
+      "phase": "trial2"
+    },
+    {
+      "label": "trial2_read_many",
+      "seconds": 0.1903149999998277,
+      "jobs": [
+        107,
+        108
+      ],
+      "stages": [
+        249,
+        250,
+        251
+      ],
+      "tasks": 4,
+      "executor_cpu_seconds": 0.125,
+      "task_elapsed_seconds": 0.125,
+      "disk_spill_bytes": 0,
+      "memory_spill_bytes": 0,
+      "peak_task_execution_bytes": 0,
+      "shuffle_read_bytes": 142,
+      "shuffle_write_bytes": 142,
+      "input_bytes": 126108,
+      "output_bytes": 0,
+      "variant": "many",
+      "correct": true,
+      "phase": "trial2"
+    },
+    {
+      "label": "trial3_read_many",
+      "seconds": 0.20055020000017976,
+      "jobs": [
+        109,
+        110
+      ],
+      "stages": [
+        252,
+        253,
+        254
+      ],
+      "tasks": 4,
+      "executor_cpu_seconds": 0.078125,
+      "task_elapsed_seconds": 0.115,
+      "disk_spill_bytes": 0,
+      "memory_spill_bytes": 0,
+      "peak_task_execution_bytes": 0,
+      "shuffle_read_bytes": 142,
+      "shuffle_write_bytes": 142,
+      "input_bytes": 126108,
+      "output_bytes": 0,
+      "variant": "many",
+      "correct": true,
+      "phase": "trial3"
+    },
+    {
+      "label": "trial3_read_compact",
+      "seconds": 0.12772399999994377,
+      "jobs": [
+        111,
+        112
+      ],
+      "stages": [
+        255,
+        256,
+        257
+      ],
+      "tasks": 4,
+      "executor_cpu_seconds": 0.046875,
+      "task_elapsed_seconds": 0.027,
+      "disk_spill_bytes": 0,
+      "memory_spill_bytes": 0,
+      "peak_task_execution_bytes": 0,
+      "shuffle_read_bytes": 142,
+      "shuffle_write_bytes": 142,
+      "input_bytes": 54768,
+      "output_bytes": 0,
+      "variant": "compact",
+      "correct": true,
+      "phase": "trial3"
+    }
+  ],
+  "summary": [
+    {
+      "variant": "many",
+      "runs": 3,
+      "correct": true,
+      "median_seconds": 0.20055020000017976,
+      "median_executor_cpu_seconds": 0.109375,
+      "median_task_elapsed_seconds": 0.123,
+      "median_peak_task_execution_bytes": 0,
+      "median_disk_spill_bytes": 0,
+      "median_memory_spill_bytes": 0,
+      "median_shuffle_read_bytes": 142,
+      "median_shuffle_write_bytes": 142,
+      "median_input_bytes": 126108,
+      "median_tasks": 4,
+      "min_seconds": 0.1903149999998277,
+      "max_seconds": 0.2117428999999902
+    },
+    {
+      "variant": "compact",
+      "runs": 3,
+      "correct": true,
+      "median_seconds": 0.13912789999994857,
+      "median_executor_cpu_seconds": 0.015625,
+      "median_task_elapsed_seconds": 0.027,
+      "median_peak_task_execution_bytes": 0,
+      "median_disk_spill_bytes": 0,
+      "median_memory_spill_bytes": 0,
+      "median_shuffle_read_bytes": 142,
+      "median_shuffle_write_bytes": 142,
+      "median_input_bytes": 54768,
+      "median_tasks": 4,
+      "min_seconds": 0.12772399999994377,
+      "max_seconds": 0.15262780000011844
+    }
+  ],
+  "write_metric": {
+    "label": "prepare_32_files",
+    "seconds": 1.5359957999999097,
+    "jobs": [
+      90
+    ],
+    "stages": [
+      222,
+      223
+    ],
+    "tasks": 36,
+    "executor_cpu_seconds": 0.953125,
+    "task_elapsed_seconds": 1.879,
+    "disk_spill_bytes": 0,
+    "memory_spill_bytes": 0,
+    "peak_task_execution_bytes": 0,
+    "shuffle_read_bytes": 117613,
+    "shuffle_write_bytes": 117613,
+    "input_bytes": 0,
+    "output_bytes": 90420
+  },
+  "compact_metric": {
+    "label": "compact_to_2_files",
+    "seconds": 0.814405699999952,
+    "jobs": [
+      91,
+      92
+    ],
+    "stages": [
+      224,
+      225
+    ],
+    "tasks": 3,
+    "executor_cpu_seconds": 0.25,
+    "task_elapsed_seconds": 0.801,
+    "disk_spill_bytes": 0,
+    "memory_spill_bytes": 0,
+    "peak_task_execution_bytes": 0,
+    "shuffle_read_bytes": 0,
+    "shuffle_write_bytes": 0,
+    "input_bytes": 126108,
+    "output_bytes": 51760
+  },
+  "exact_content_equal": true,
+  "timer_scope": "Membuat reader, listing/schema, merencanakan dan menjalankan agregasi. Penulisan/pemadatan diukur terpisah."
+}

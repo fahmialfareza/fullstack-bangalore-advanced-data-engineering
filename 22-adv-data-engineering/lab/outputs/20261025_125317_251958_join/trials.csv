@@ -1,0 +1,7 @@
+variant,repeat,total_seconds,correct,materialize_seconds
+baseline,1,0.27050409999992553,True,
+broadcast,1,0.10463740000022881,True,
+broadcast,2,0.11829500000021653,True,
+baseline,2,0.23737069999970117,True,
+baseline,3,0.23923629999990226,True,
+broadcast,3,0.09597100000019054,True,

@@ -1,0 +1,26 @@
+[
+  {
+    "variant": "p2",
+    "median_seconds": 0.15478940000002694,
+    "min_seconds": 0.15478940000002694,
+    "max_seconds": 0.15478940000002694,
+    "runs": 1,
+    "correct": true
+  },
+  {
+    "variant": "p8",
+    "median_seconds": 0.32055209999998624,
+    "min_seconds": 0.32055209999998624,
+    "max_seconds": 0.32055209999998624,
+    "runs": 1,
+    "correct": true
+  },
+  {
+    "variant": "p32",
+    "median_seconds": 0.5902748999997129,
+    "min_seconds": 0.5902748999997129,
+    "max_seconds": 0.5902748999997129,
+    "runs": 1,
+    "correct": true
+  }
+]

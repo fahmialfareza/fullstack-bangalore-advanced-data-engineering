@@ -1,0 +1,59 @@
+== Physical Plan ==
+* HashAggregate (10)
++- Exchange (9)
+   +- * HashAggregate (8)
+      +- * Project (7)
+         +- * Filter (6)
+            +- InMemoryTableScan (1)
+                  +- InMemoryRelation (2)
+                        +- * Project (5)
+                           +- * Project (4)
+                              +- * Range (3)
+
+
+(1) InMemoryTableScan
+Output [4]: [amount#3L, fingerprint#738, order_id#1L, region#7]
+Arguments: [amount#3L, fingerprint#738, order_id#1L, region#7], [((order_id#1L % 3) = 2)]
+
+(2) InMemoryRelation
+Arguments: [order_id#1L, customer_id#2L, amount#3L, region#7, fingerprint#738], StorageLevel(disk, memory, deserialized, 1 replicas), [order_id#1L ASC NULLS FIRST]
+
+(3) Range [codegen id : 1]
+Output [1]: [id#0L]
+Arguments: Range (0, 10000, step=1, splits=Some(4))
+
+(4) Project [codegen id : 1]
+Output [3]: [id#0L AS order_id#1L, (id#0L % 1000) AS customer_id#2L, (((id#0L % 97) + 1) * 100) AS amount#3L]
+Input [1]: [id#0L]
+
+(5) Project [codegen id : 1]
+Output [5]: [order_id#1L, customer_id#2L, amount#3L, cast((customer_id#2L % 5) as int) AS region#7, sha2(cast(sha2(cast(sha2(cast(sha2(cast(cast(order_id#1L as string) as binary), 256) as binary), 256) as binary), 256) as binary), 256) AS fingerprint#738]
+Input [3]: [order_id#1L, customer_id#2L, amount#3L]
+
+(6) Filter [codegen id : 1]
+Input [4]: [amount#3L, fingerprint#738, order_id#1L, region#7]
+Condition : ((order_id#1L % 3) = 2)
+
+(7) Project [codegen id : 1]
+Output [3]: [amount#3L, region#7, fingerprint#738]
+Input [4]: [amount#3L, fingerprint#738, order_id#1L, region#7]
+
+(8) HashAggregate [codegen id : 1]
+Input [3]: [amount#3L, region#7, fingerprint#738]
+Keys [1]: [region#7]
+Functions [2]: [partial_sum(amount#3L), partial_sum(length(fingerprint#738))]
+Aggregate Attributes [2]: [sum#1262L, sum#1263L]
+Results [3]: [region#7, sum#1264L, sum#1265L]
+
+(9) Exchange
+Input [3]: [region#7, sum#1264L, sum#1265L]
+Arguments: hashpartitioning(region#7, 8), ENSURE_REQUIREMENTS, [plan_id=619]
+
+(10) HashAggregate [codegen id : 2]
+Input [3]: [region#7, sum#1264L, sum#1265L]
+Keys [1]: [region#7]
+Functions [2]: [sum(amount#3L), sum(length(fingerprint#738))]
+Aggregate Attributes [2]: [sum(amount#3L)#1185L, sum(length(fingerprint#738))#1186L]
+Results [3]: [region#7, sum(amount#3L)#1185L AS revenue#1178L, sum(length(fingerprint#738))#1186L AS fingerprint_chars#1179L]
+
+

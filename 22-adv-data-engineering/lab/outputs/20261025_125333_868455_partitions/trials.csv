@@ -1,0 +1,4 @@
+variant,repeat,total_seconds,correct,materialize_seconds
+p2,1,0.15478940000002694,True,
+p8,1,0.32055209999998624,True,
+p32,1,0.5902748999997129,True,

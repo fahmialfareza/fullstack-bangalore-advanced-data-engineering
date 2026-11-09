@@ -1,0 +1,40 @@
+== Physical Plan ==
+* HashAggregate (6)
++- Exchange (5)
+   +- * HashAggregate (4)
+      +- * Project (3)
+         +- * Filter (2)
+            +- * Range (1)
+
+
+(1) Range [codegen id : 1]
+Output [1]: [id#0L]
+Arguments: Range (0, 10000, step=1, splits=Some(4))
+
+(2) Filter [codegen id : 1]
+Input [1]: [id#0L]
+Condition : ((id#0L % 3) = 2)
+
+(3) Project [codegen id : 1]
+Output [3]: [(((id#0L % 97) + 1) * 100) AS amount#3L, cast(((id#0L % 1000) % 5) as int) AS region#7, sha2(cast(sha2(cast(sha2(cast(sha2(cast(cast(id#0L as string) as binary), 256) as binary), 256) as binary), 256) as binary), 256) AS fingerprint#692]
+Input [1]: [id#0L]
+
+(4) HashAggregate [codegen id : 1]
+Input [3]: [amount#3L, region#7, fingerprint#692]
+Keys [1]: [region#7]
+Functions [2]: [partial_sum(amount#3L), partial_sum(length(fingerprint#692))]
+Aggregate Attributes [2]: [sum#732L, sum#733L]
+Results [3]: [region#7, sum#734L, sum#735L]
+
+(5) Exchange
+Input [3]: [region#7, sum#734L, sum#735L]
+Arguments: hashpartitioning(region#7, 8), ENSURE_REQUIREMENTS, [plan_id=475]
+
+(6) HashAggregate [codegen id : 2]
+Input [3]: [region#7, sum#734L, sum#735L]
+Keys [1]: [region#7]
+Functions [2]: [sum(amount#3L), sum(length(fingerprint#692))]
+Aggregate Attributes [2]: [sum(amount#3L)#730L, sum(length(fingerprint#692))#731L]
+Results [3]: [region#7, sum(amount#3L)#730L AS revenue#723L, sum(length(fingerprint#692))#731L AS fingerprint_chars#724L]
+
+

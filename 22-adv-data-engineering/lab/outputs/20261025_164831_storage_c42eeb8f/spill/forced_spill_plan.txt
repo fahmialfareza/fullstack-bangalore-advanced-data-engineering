@@ -1,0 +1,24 @@
+== Physical Plan ==
+Window (4)
++- * Sort (3)
+   +- Exchange (2)
+      +- * Range (1)
+
+
+(1) Range [codegen id : 1]
+Output [1]: [id#28L]
+Arguments: Range (0, 10000, step=1, splits=Some(2))
+
+(2) Exchange
+Input [1]: [id#28L]
+Arguments: SinglePartition, ENSURE_REQUIREMENTS, [plan_id=144]
+
+(3) Sort [codegen id : 2]
+Input [1]: [id#28L]
+Arguments: [id#28L ASC NULLS FIRST], false, 0
+
+(4) Window
+Input [1]: [id#28L]
+Arguments: [sum(id#28L) windowspecdefinition(id#28L ASC NULLS FIRST, specifiedwindowframe(RowFrame, unboundedpreceding$(), unboundedfollowing$())) AS total#29L], [id#28L ASC NULLS FIRST]
+
+

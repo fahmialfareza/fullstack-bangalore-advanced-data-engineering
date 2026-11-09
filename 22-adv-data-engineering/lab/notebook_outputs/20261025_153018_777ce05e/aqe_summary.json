@@ -1,0 +1,20 @@
+[
+  {
+    "experiment": "aqe",
+    "variant": "off",
+    "median_seconds": 1.1088744000001043,
+    "min_seconds": 1.096547800000053,
+    "max_seconds": 1.2151592000000164,
+    "runs": 3,
+    "correct": true
+  },
+  {
+    "experiment": "aqe",
+    "variant": "on",
+    "median_seconds": 0.3173458999999639,
+    "min_seconds": 0.27738909999993666,
+    "max_seconds": 0.3180796999999984,
+    "runs": 3,
+    "correct": true
+  }
+]

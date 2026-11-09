@@ -1,0 +1,67 @@
+== Physical Plan ==
+* HashAggregate (11)
++- Exchange (10)
+   +- * HashAggregate (9)
+      +- * Project (8)
+         +- * BroadcastHashJoin Inner BuildRight (7)
+            :- * Project (3)
+            :  +- * Filter (2)
+            :     +- * Range (1)
+            +- BroadcastExchange (6)
+               +- * Project (5)
+                  +- * Range (4)
+
+
+(1) Range [codegen id : 2]
+Output [1]: [id#0L]
+Arguments: Range (0, 10000, step=1, splits=Some(4))
+
+(2) Filter [codegen id : 2]
+Input [1]: [id#0L]
+Condition : isnotnull((id#0L % 1000))
+
+(3) Project [codegen id : 2]
+Output [2]: [(id#0L % 1000) AS customer_id#2L, (((id#0L % 97) + 1) * 100) AS amount#3L]
+Input [1]: [id#0L]
+
+(4) Range [codegen id : 1]
+Output [1]: [id#4L]
+Arguments: Range (0, 1000, step=1, splits=Some(2))
+
+(5) Project [codegen id : 1]
+Output [2]: [id#4L AS customer_id#5L, cast((id#4L % 5) as int) AS region#6]
+Input [1]: [id#4L]
+
+(6) BroadcastExchange
+Input [2]: [customer_id#5L, region#6]
+Arguments: HashedRelationBroadcastMode(List(input[0, bigint, false]),false), [plan_id=801]
+
+(7) BroadcastHashJoin [codegen id : 2]
+Left keys [1]: [customer_id#2L]
+Right keys [1]: [customer_id#5L]
+Join type: Inner
+Join condition: None
+
+(8) Project [codegen id : 2]
+Output [2]: [amount#3L, region#6]
+Input [4]: [customer_id#2L, amount#3L, customer_id#5L, region#6]
+
+(9) HashAggregate [codegen id : 2]
+Input [2]: [amount#3L, region#6]
+Keys [1]: [region#6]
+Functions [2]: [partial_sum(amount#3L), partial_count(1)]
+Aggregate Attributes [2]: [sum#150L, count#151L]
+Results [3]: [region#6, sum#152L, count#153L]
+
+(10) Exchange
+Input [3]: [region#6, sum#152L, count#153L]
+Arguments: hashpartitioning(region#6, 8), ENSURE_REQUIREMENTS, [plan_id=807]
+
+(11) HashAggregate [codegen id : 3]
+Input [3]: [region#6, sum#152L, count#153L]
+Keys [1]: [region#6]
+Functions [2]: [sum(amount#3L), count(1)]
+Aggregate Attributes [2]: [sum(amount#3L)#149L, count(1)#148L]
+Results [3]: [region#6, sum(amount#3L)#149L AS revenue#142L, count(1)#148L AS orders#143L]
+
+

@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14",
+  "spark": "4.0.1",
+  "java": "17.0.12",
+  "master": "local[2]",
+  "rows": 10000,
+  "repeats": 3,
+  "ui": "http://127.0.0.1:4040",
+  "limitations": [
+    "Data sintetis pada satu komputer",
+    "Cache OS dan kondisi JVM tidak direset antar-trial",
+    "Waktu lokal tidak mewakili cluster produksi"
+  ]
+}

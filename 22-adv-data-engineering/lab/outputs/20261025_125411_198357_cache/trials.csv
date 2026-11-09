@@ -1,0 +1,3 @@
+variant,repeat,total_seconds,correct,materialize_seconds
+no_cache,1,0.33558210000001054,True,
+cache,1,0.4392454000003454,True,0.09085980000008931

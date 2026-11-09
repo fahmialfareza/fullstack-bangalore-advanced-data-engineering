@@ -1,0 +1,87 @@
+== Physical Plan ==
+AdaptiveSparkPlan (15)
++- HashAggregate (14)
+   +- Exchange (13)
+      +- HashAggregate (12)
+         +- Project (11)
+            +- SortMergeJoin Inner (10)
+               :- Sort (5)
+               :  +- Exchange (4)
+               :     +- Project (3)
+               :        +- Filter (2)
+               :           +- Range (1)
+               +- Sort (9)
+                  +- Exchange (8)
+                     +- Project (7)
+                        +- Range (6)
+
+
+(1) Range
+Output [1]: [id#0L]
+Arguments: Range (0, 10000, step=1, splits=Some(4))
+
+(2) Filter
+Input [1]: [id#0L]
+Condition : isnotnull((id#0L % 1000))
+
+(3) Project
+Output [2]: [(id#0L % 1000) AS customer_id#2L, (((id#0L % 97) + 1) * 100) AS amount#3L]
+Input [1]: [id#0L]
+
+(4) Exchange
+Input [2]: [customer_id#2L, amount#3L]
+Arguments: hashpartitioning(customer_id#2L, 64), ENSURE_REQUIREMENTS, [plan_id=3384]
+
+(5) Sort
+Input [2]: [customer_id#2L, amount#3L]
+Arguments: [customer_id#2L ASC NULLS FIRST], false, 0
+
+(6) Range
+Output [1]: [id#4L]
+Arguments: Range (0, 1000, step=1, splits=Some(2))
+
+(7) Project
+Output [2]: [id#4L AS customer_id#5L, cast((id#4L % 5) as int) AS region#6]
+Input [1]: [id#4L]
+
+(8) Exchange
+Input [2]: [customer_id#5L, region#6]
+Arguments: hashpartitioning(customer_id#5L, 64), ENSURE_REQUIREMENTS, [plan_id=3385]
+
+(9) Sort
+Input [2]: [customer_id#5L, region#6]
+Arguments: [customer_id#5L ASC NULLS FIRST], false, 0
+
+(10) SortMergeJoin
+Left keys [1]: [customer_id#2L]
+Right keys [1]: [customer_id#5L]
+Join type: Inner
+Join condition: None
+
+(11) Project
+Output [2]: [amount#3L, region#6]
+Input [4]: [customer_id#2L, amount#3L, customer_id#5L, region#6]
+
+(12) HashAggregate
+Input [2]: [amount#3L, region#6]
+Keys [1]: [region#6]
+Functions [2]: [partial_sum(amount#3L), partial_count(1)]
+Aggregate Attributes [2]: [sum#468L, count#469L]
+Results [3]: [region#6, sum#470L, count#471L]
+
+(13) Exchange
+Input [3]: [region#6, sum#470L, count#471L]
+Arguments: hashpartitioning(region#6, 64), ENSURE_REQUIREMENTS, [plan_id=3392]
+
+(14) HashAggregate
+Input [3]: [region#6, sum#470L, count#471L]
+Keys [1]: [region#6]
+Functions [2]: [sum(amount#3L), count(1)]
+Aggregate Attributes [2]: [sum(amount#3L)#467L, count(1)#466L]
+Results [3]: [region#6, sum(amount#3L)#467L AS revenue#460L, count(1)#466L AS orders#461L]
+
+(15) AdaptiveSparkPlan
+Output [3]: [region#6, revenue#460L, orders#461L]
+Arguments: isFinalPlan=false
+
+

@@ -1,0 +1,82 @@
+== Physical Plan ==
+* HashAggregate (14)
++- Exchange (13)
+   +- * HashAggregate (12)
+      +- * Project (11)
+         +- * SortMergeJoin Inner (10)
+            :- * Sort (5)
+            :  +- Exchange (4)
+            :     +- * Project (3)
+            :        +- * Filter (2)
+            :           +- * Range (1)
+            +- * Sort (9)
+               +- Exchange (8)
+                  +- * Project (7)
+                     +- * Range (6)
+
+
+(1) Range [codegen id : 1]
+Output [1]: [id#0L]
+Arguments: Range (0, 10000, step=1, splits=Some(4))
+
+(2) Filter [codegen id : 1]
+Input [1]: [id#0L]
+Condition : isnotnull((id#0L % 1000))
+
+(3) Project [codegen id : 1]
+Output [2]: [(id#0L % 1000) AS customer_id#2L, (((id#0L % 97) + 1) * 100) AS amount#3L]
+Input [1]: [id#0L]
+
+(4) Exchange
+Input [2]: [customer_id#2L, amount#3L]
+Arguments: hashpartitioning(customer_id#2L, 8), ENSURE_REQUIREMENTS, [plan_id=707]
+
+(5) Sort [codegen id : 2]
+Input [2]: [customer_id#2L, amount#3L]
+Arguments: [customer_id#2L ASC NULLS FIRST], false, 0
+
+(6) Range [codegen id : 3]
+Output [1]: [id#4L]
+Arguments: Range (0, 1000, step=1, splits=Some(2))
+
+(7) Project [codegen id : 3]
+Output [2]: [id#4L AS customer_id#5L, cast((id#4L % 5) as int) AS region#6]
+Input [1]: [id#4L]
+
+(8) Exchange
+Input [2]: [customer_id#5L, region#6]
+Arguments: hashpartitioning(customer_id#5L, 8), ENSURE_REQUIREMENTS, [plan_id=713]
+
+(9) Sort [codegen id : 4]
+Input [2]: [customer_id#5L, region#6]
+Arguments: [customer_id#5L ASC NULLS FIRST], false, 0
+
+(10) SortMergeJoin [codegen id : 5]
+Left keys [1]: [customer_id#2L]
+Right keys [1]: [customer_id#5L]
+Join type: Inner
+Join condition: None
+
+(11) Project [codegen id : 5]
+Output [2]: [amount#3L, region#6]
+Input [4]: [customer_id#2L, amount#3L, customer_id#5L, region#6]
+
+(12) HashAggregate [codegen id : 5]
+Input [2]: [amount#3L, region#6]
+Keys [1]: [region#6]
+Functions [2]: [partial_sum(amount#3L), partial_count(1)]
+Aggregate Attributes [2]: [sum#137L, count#138L]
+Results [3]: [region#6, sum#139L, count#140L]
+
+(13) Exchange
+Input [3]: [region#6, sum#139L, count#140L]
+Arguments: hashpartitioning(region#6, 8), ENSURE_REQUIREMENTS, [plan_id=722]
+
+(14) HashAggregate [codegen id : 6]
+Input [3]: [region#6, sum#139L, count#140L]
+Keys [1]: [region#6]
+Functions [2]: [sum(amount#3L), count(1)]
+Aggregate Attributes [2]: [sum(amount#3L)#136L, count(1)#135L]
+Results [3]: [region#6, sum(amount#3L)#136L AS revenue#129L, count(1)#135L AS orders#130L]
+
+

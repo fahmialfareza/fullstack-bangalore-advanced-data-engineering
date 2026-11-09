@@ -1,0 +1,20 @@
+[
+  {
+    "variant": "p2",
+    "repeat": 1,
+    "total_seconds": 0.15478940000002694,
+    "correct": true
+  },
+  {
+    "variant": "p8",
+    "repeat": 1,
+    "total_seconds": 0.32055209999998624,
+    "correct": true
+  },
+  {
+    "variant": "p32",
+    "repeat": 1,
+    "total_seconds": 0.5902748999997129,
+    "correct": true
+  }
+]

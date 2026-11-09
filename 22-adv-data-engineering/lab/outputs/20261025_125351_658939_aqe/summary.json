@@ -1,0 +1,18 @@
+[
+  {
+    "variant": "aqe_off",
+    "median_seconds": 1.2047151000001577,
+    "min_seconds": 1.2047151000001577,
+    "max_seconds": 1.2047151000001577,
+    "runs": 1,
+    "correct": true
+  },
+  {
+    "variant": "aqe_on",
+    "median_seconds": 0.30306560000008176,
+    "min_seconds": 0.30306560000008176,
+    "max_seconds": 0.30306560000008176,
+    "runs": 1,
+    "correct": true
+  }
+]

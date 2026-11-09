@@ -1,0 +1,44 @@
+[
+  {
+    "experiment": "join",
+    "variant": "sort_merge",
+    "repeat": 1,
+    "seconds": 0.4168224000000009,
+    "correct": true
+  },
+  {
+    "experiment": "join",
+    "variant": "broadcast",
+    "repeat": 1,
+    "seconds": 0.17816450000009354,
+    "correct": true
+  },
+  {
+    "experiment": "join",
+    "variant": "broadcast",
+    "repeat": 2,
+    "seconds": 0.21997299999998177,
+    "correct": true
+  },
+  {
+    "experiment": "join",
+    "variant": "sort_merge",
+    "repeat": 2,
+    "seconds": 0.37331990000006954,
+    "correct": true
+  },
+  {
+    "experiment": "join",
+    "variant": "sort_merge",
+    "repeat": 3,
+    "seconds": 0.3483374999998432,
+    "correct": true
+  },
+  {
+    "experiment": "join",
+    "variant": "broadcast",
+    "repeat": 3,
+    "seconds": 0.1688673999999537,
+    "correct": true
+  }
+]

@@ -1,0 +1,45 @@
+== Physical Plan ==
+* HashAggregate (7)
++- Exchange (6)
+   +- * HashAggregate (5)
+      +- * Project (4)
+         +- Exchange (3)
+            +- * Project (2)
+               +- * Range (1)
+
+
+(1) Range [codegen id : 1]
+Output [1]: [id#0L]
+Arguments: Range (0, 10000, step=1, splits=Some(4))
+
+(2) Project [codegen id : 1]
+Output [1]: [CASE WHEN ((id#0L % 10) < 8) THEN 0 ELSE (id#0L % 1000) END AS customer_id#21L]
+Input [1]: [id#0L]
+
+(3) Exchange
+Input [1]: [customer_id#21L]
+Arguments: hashpartitioning(customer_id#21L, 8), REPARTITION_BY_NUM, [plan_id=54]
+
+(4) Project [codegen id : 2]
+Output [1]: [SPARK_PARTITION_ID() AS partition_id#22]
+Input [1]: [customer_id#21L]
+
+(5) HashAggregate [codegen id : 2]
+Input [1]: [partition_id#22]
+Keys [1]: [partition_id#22]
+Functions [1]: [partial_count(1)]
+Aggregate Attributes [1]: [count#26L]
+Results [2]: [partition_id#22, count#27L]
+
+(6) Exchange
+Input [2]: [partition_id#22, count#27L]
+Arguments: hashpartitioning(partition_id#22, 8), ENSURE_REQUIREMENTS, [plan_id=59]
+
+(7) HashAggregate [codegen id : 3]
+Input [2]: [partition_id#22, count#27L]
+Keys [1]: [partition_id#22]
+Functions [1]: [count(1)]
+Aggregate Attributes [1]: [count(1)#25L]
+Results [2]: [partition_id#22, count(1)#25L AS count#23L]
+
+

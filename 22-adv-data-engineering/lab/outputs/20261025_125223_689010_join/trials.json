@@ -1,0 +1,14 @@
+[
+  {
+    "variant": "baseline",
+    "repeat": 1,
+    "total_seconds": 0.24928080000017871,
+    "correct": true
+  },
+  {
+    "variant": "broadcast",
+    "repeat": 1,
+    "total_seconds": 0.13433119999990595,
+    "correct": true
+  }
+]

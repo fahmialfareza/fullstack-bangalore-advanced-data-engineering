@@ -1,0 +1,14 @@
+[
+  {
+    "variant": "aqe_off",
+    "repeat": 1,
+    "total_seconds": 1.2047151000001577,
+    "correct": true
+  },
+  {
+    "variant": "aqe_on",
+    "repeat": 1,
+    "total_seconds": 0.30306560000008176,
+    "correct": true
+  }
+]

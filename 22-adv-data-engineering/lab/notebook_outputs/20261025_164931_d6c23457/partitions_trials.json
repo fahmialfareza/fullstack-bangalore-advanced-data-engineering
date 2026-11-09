@@ -1,0 +1,65 @@
+[
+  {
+    "experiment": "partitions",
+    "variant": "p2",
+    "repeat": 1,
+    "seconds": 0.11056540000026871,
+    "correct": true
+  },
+  {
+    "experiment": "partitions",
+    "variant": "p8",
+    "repeat": 1,
+    "seconds": 0.22284589999981108,
+    "correct": true
+  },
+  {
+    "experiment": "partitions",
+    "variant": "p32",
+    "repeat": 1,
+    "seconds": 0.6906105999996726,
+    "correct": true
+  },
+  {
+    "experiment": "partitions",
+    "variant": "p8",
+    "repeat": 2,
+    "seconds": 0.22224329999971815,
+    "correct": true
+  },
+  {
+    "experiment": "partitions",
+    "variant": "p32",
+    "repeat": 2,
+    "seconds": 0.691242500000044,
+    "correct": true
+  },
+  {
+    "experiment": "partitions",
+    "variant": "p2",
+    "repeat": 2,
+    "seconds": 0.10183239999969373,
+    "correct": true
+  },
+  {
+    "experiment": "partitions",
+    "variant": "p32",
+    "repeat": 3,
+    "seconds": 0.66891779999969,
+    "correct": true
+  },
+  {
+    "experiment": "partitions",
+    "variant": "p2",
+    "repeat": 3,
+    "seconds": 0.1253801000002568,
+    "correct": true
+  },
+  {
+    "experiment": "partitions",
+    "variant": "p8",
+    "repeat": 3,
+    "seconds": 0.21190529999967112,
+    "correct": true
+  }
+]

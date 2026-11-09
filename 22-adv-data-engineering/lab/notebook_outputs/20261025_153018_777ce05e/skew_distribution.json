@@ -1,0 +1,34 @@
+[
+  {
+    "partition_id": 0,
+    "count": 210
+  },
+  {
+    "partition_id": 1,
+    "count": 290
+  },
+  {
+    "partition_id": 2,
+    "count": 240
+  },
+  {
+    "partition_id": 3,
+    "count": 280
+  },
+  {
+    "partition_id": 4,
+    "count": 240
+  },
+  {
+    "partition_id": 5,
+    "count": 8250
+  },
+  {
+    "partition_id": 6,
+    "count": 190
+  },
+  {
+    "partition_id": 7,
+    "count": 300
+  }
+]

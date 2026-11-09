@@ -1,0 +1,18 @@
+[
+  {
+    "variant": "baseline",
+    "median_seconds": 0.23923629999990226,
+    "min_seconds": 0.23737069999970117,
+    "max_seconds": 0.27050409999992553,
+    "runs": 3,
+    "correct": true
+  },
+  {
+    "variant": "broadcast",
+    "median_seconds": 0.10463740000022881,
+    "min_seconds": 0.09597100000019054,
+    "max_seconds": 0.11829500000021653,
+    "runs": 3,
+    "correct": true
+  }
+]

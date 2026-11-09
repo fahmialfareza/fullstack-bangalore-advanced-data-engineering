@@ -1,0 +1,44 @@
+[
+  {
+    "experiment": "aqe",
+    "variant": "off",
+    "repeat": 1,
+    "seconds": 1.3405490999994072,
+    "correct": true
+  },
+  {
+    "experiment": "aqe",
+    "variant": "on",
+    "repeat": 1,
+    "seconds": 0.3538936000004469,
+    "correct": true
+  },
+  {
+    "experiment": "aqe",
+    "variant": "on",
+    "repeat": 2,
+    "seconds": 0.35584879999987606,
+    "correct": true
+  },
+  {
+    "experiment": "aqe",
+    "variant": "off",
+    "repeat": 2,
+    "seconds": 1.2887230999995154,
+    "correct": true
+  },
+  {
+    "experiment": "aqe",
+    "variant": "off",
+    "repeat": 3,
+    "seconds": 1.688088500000049,
+    "correct": true
+  },
+  {
+    "experiment": "aqe",
+    "variant": "on",
+    "repeat": 3,
+    "seconds": 0.3662843000001885,
+    "correct": true
+  }
+]

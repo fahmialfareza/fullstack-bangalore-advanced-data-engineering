@@ -1,0 +1,29 @@
+[
+  {
+    "experiment": "partitions",
+    "variant": "p2",
+    "median_seconds": 0.0809463999999025,
+    "min_seconds": 0.0748854000000847,
+    "max_seconds": 0.09717769999997472,
+    "runs": 3,
+    "correct": true
+  },
+  {
+    "experiment": "partitions",
+    "variant": "p8",
+    "median_seconds": 0.15962450000006356,
+    "min_seconds": 0.13906210000004648,
+    "max_seconds": 0.1732457999999042,
+    "runs": 3,
+    "correct": true
+  },
+  {
+    "experiment": "partitions",
+    "variant": "p32",
+    "median_seconds": 0.5029595999999401,
+    "min_seconds": 0.46068689999992785,
+    "max_seconds": 0.5053139999999985,
+    "runs": 3,
+    "correct": true
+  }
+]

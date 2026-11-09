@@ -7,3 +7,9 @@ kafka-python
 
 yfinance
 pandas
+
+pyspark
+pyarrow
+grpcio
+grpcio_status
+zstandard

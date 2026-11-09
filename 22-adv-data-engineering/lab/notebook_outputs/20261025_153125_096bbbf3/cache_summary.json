@@ -1,0 +1,20 @@
+[
+  {
+    "experiment": "cache",
+    "variant": "no_cache",
+    "median_seconds": 0.30002809999996316,
+    "min_seconds": 0.295553499999869,
+    "max_seconds": 0.36922389999995175,
+    "runs": 3,
+    "correct": true
+  },
+  {
+    "experiment": "cache",
+    "variant": "cache",
+    "median_seconds": 0.3252165999999761,
+    "min_seconds": 0.3034099999999853,
+    "max_seconds": 0.3847780999999486,
+    "runs": 3,
+    "correct": true
+  }
+]

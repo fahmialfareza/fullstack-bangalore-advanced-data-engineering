@@ -1,0 +1,2472 @@
+{
+  "metric": {
+    "label": "prepare_32_files",
+    "seconds": 1.8429939000006925,
+    "jobs": [
+      8
+    ],
+    "stages": [
+      16,
+      17
+    ],
+    "tasks": 36,
+    "executor_cpu_seconds": 1.171875,
+    "task_elapsed_seconds": 2.036,
+    "disk_spill_bytes": 0,
+    "memory_spill_bytes": 0,
+    "peak_task_execution_bytes": 0,
+    "shuffle_read_bytes": 117613,
+    "shuffle_write_bytes": 117613,
+    "input_bytes": 0,
+    "output_bytes": 90420
+  },
+  "stages": [
+    {
+      "status": "COMPLETE",
+      "stageId": 16,
+      "attemptId": 0,
+      "numTasks": 4,
+      "numActiveTasks": 0,
+      "numCompleteTasks": 4,
+      "numFailedTasks": 0,
+      "numKilledTasks": 0,
+      "numCompletedIndices": 4,
+      "submissionTime": "2026-10-25T09:48:49.602GMT",
+      "firstTaskLaunchedTime": "2026-10-25T09:48:49.605GMT",
+      "completionTime": "2026-10-25T09:48:49.795GMT",
+      "executorDeserializeTime": 4,
+      "executorDeserializeCpuTime": 0,
+      "executorRunTime": 361,
+      "executorCpuTime": 250000000,
+      "resultSize": 7221,
+      "jvmGcTime": 0,
+      "resultSerializationTime": 0,
+      "memoryBytesSpilled": 0,
+      "diskBytesSpilled": 0,
+      "peakExecutionMemory": 0,
+      "inputBytes": 0,
+      "inputRecords": 10000,
+      "outputBytes": 0,
+      "outputRecords": 0,
+      "shuffleRemoteBlocksFetched": 0,
+      "shuffleLocalBlocksFetched": 0,
+      "shuffleFetchWaitTime": 0,
+      "shuffleRemoteBytesRead": 0,
+      "shuffleRemoteBytesReadToDisk": 0,
+      "shuffleLocalBytesRead": 0,
+      "shuffleReadBytes": 0,
+      "shuffleReadRecords": 0,
+      "shuffleCorruptMergedBlockChunks": 0,
+      "shuffleMergedFetchFallbackCount": 0,
+      "shuffleMergedRemoteBlocksFetched": 0,
+      "shuffleMergedLocalBlocksFetched": 0,
+      "shuffleMergedRemoteChunksFetched": 0,
+      "shuffleMergedLocalChunksFetched": 0,
+      "shuffleMergedRemoteBytesRead": 0,
+      "shuffleMergedLocalBytesRead": 0,
+      "shuffleRemoteReqsDuration": 0,
+      "shuffleMergedRemoteReqsDuration": 0,
+      "shuffleWriteBytes": 117613,
+      "shuffleWriteTime": 157837800,
+      "shuffleWriteRecords": 10000,
+      "name": "parquet at NativeMethodAccessorImpl.java:0",
+      "description": "prepare_32_files",
+      "details": "org.apache.spark.sql.DataFrameWriter.parquet(DataFrameWriter.scala:369)\njava.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\njava.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\njava.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.base/java.lang.reflect.Method.invoke(Method.java:568)\npy4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)\npy4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)\npy4j.Gateway.invoke(Gateway.java:282)\npy4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)\npy4j.commands.CallCommand.execute(CallCommand.java:79)\npy4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)\npy4j.ClientServerConnection.run(ClientServerConnection.java:108)\njava.base/java.lang.Thread.run(Thread.java:842)",
+      "schedulingPool": "default",
+      "rddIds": [
+        68,
+        64,
+        65,
+        66,
+        67
+      ],
+      "accumulatorUpdates": [],
+      "killedTasksSummary": {},
+      "resourceProfileId": 0,
+      "peakExecutorMetrics": {
+        "JVMHeapMemory": 0,
+        "JVMOffHeapMemory": 0,
+        "OnHeapExecutionMemory": 0,
+        "OffHeapExecutionMemory": 0,
+        "OnHeapStorageMemory": 0,
+        "OffHeapStorageMemory": 0,
+        "OnHeapUnifiedMemory": 0,
+        "OffHeapUnifiedMemory": 0,
+        "DirectPoolMemory": 0,
+        "MappedPoolMemory": 0,
+        "ProcessTreeJVMVMemory": 0,
+        "ProcessTreeJVMRSSMemory": 0,
+        "ProcessTreePythonVMemory": 0,
+        "ProcessTreePythonRSSMemory": 0,
+        "ProcessTreeOtherVMemory": 0,
+        "ProcessTreeOtherRSSMemory": 0,
+        "MinorGCCount": 0,
+        "MinorGCTime": 0,
+        "MajorGCCount": 0,
+        "MajorGCTime": 0,
+        "TotalGCTime": 0,
+        "ConcurrentGCCount": 0,
+        "ConcurrentGCTime": 0
+      },
+      "isShufflePushEnabled": false,
+      "shuffleMergersCount": 0
+    },
+    {
+      "status": "COMPLETE",
+      "stageId": 17,
+      "attemptId": 0,
+      "numTasks": 32,
+      "numActiveTasks": 0,
+      "numCompleteTasks": 32,
+      "numFailedTasks": 0,
+      "numKilledTasks": 0,
+      "numCompletedIndices": 32,
+      "submissionTime": "2026-10-25T09:48:49.797GMT",
+      "firstTaskLaunchedTime": "2026-10-25T09:48:49.887GMT",
+      "completionTime": "2026-10-25T09:48:51.080GMT",
+      "executorDeserializeTime": 612,
+      "executorDeserializeCpuTime": 453125000,
+      "executorRunTime": 1675,
+      "executorCpuTime": 921875000,
+      "resultSize": 154142,
+      "jvmGcTime": 8,
+      "resultSerializationTime": 2,
+      "memoryBytesSpilled": 0,
+      "diskBytesSpilled": 0,
+      "peakExecutionMemory": 0,
+      "inputBytes": 0,
+      "inputRecords": 0,
+      "outputBytes": 90420,
+      "outputRecords": 10000,
+      "shuffleRemoteBlocksFetched": 0,
+      "shuffleLocalBlocksFetched": 128,
+      "shuffleFetchWaitTime": 0,
+      "shuffleRemoteBytesRead": 0,
+      "shuffleRemoteBytesReadToDisk": 0,
+      "shuffleLocalBytesRead": 117613,
+      "shuffleReadBytes": 117613,
+      "shuffleReadRecords": 10000,
+      "shuffleCorruptMergedBlockChunks": 0,
+      "shuffleMergedFetchFallbackCount": 0,
+      "shuffleMergedRemoteBlocksFetched": 0,
+      "shuffleMergedLocalBlocksFetched": 0,
+      "shuffleMergedRemoteChunksFetched": 0,
+      "shuffleMergedLocalChunksFetched": 0,
+      "shuffleMergedRemoteBytesRead": 0,
+      "shuffleMergedLocalBytesRead": 0,
+      "shuffleRemoteReqsDuration": 0,
+      "shuffleMergedRemoteReqsDuration": 0,
+      "shuffleWriteBytes": 0,
+      "shuffleWriteTime": 0,
+      "shuffleWriteRecords": 0,
+      "name": "parquet at NativeMethodAccessorImpl.java:0",
+      "description": "prepare_32_files",
+      "details": "org.apache.spark.sql.DataFrameWriter.parquet(DataFrameWriter.scala:369)\njava.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\njava.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\njava.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\njava.base/java.lang.reflect.Method.invoke(Method.java:568)\npy4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)\npy4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)\npy4j.Gateway.invoke(Gateway.java:282)\npy4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)\npy4j.commands.CallCommand.execute(CallCommand.java:79)\npy4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)\npy4j.ClientServerConnection.run(ClientServerConnection.java:108)\njava.base/java.lang.Thread.run(Thread.java:842)",
+      "schedulingPool": "default",
+      "rddIds": [
+        70,
+        69
+      ],
+      "accumulatorUpdates": [],
+      "killedTasksSummary": {},
+      "resourceProfileId": 0,
+      "peakExecutorMetrics": {
+        "JVMHeapMemory": 0,
+        "JVMOffHeapMemory": 0,
+        "OnHeapExecutionMemory": 0,
+        "OffHeapExecutionMemory": 0,
+        "OnHeapStorageMemory": 0,
+        "OffHeapStorageMemory": 0,
+        "OnHeapUnifiedMemory": 0,
+        "OffHeapUnifiedMemory": 0,
+        "DirectPoolMemory": 0,
+        "MappedPoolMemory": 0,
+        "ProcessTreeJVMVMemory": 0,
+        "ProcessTreeJVMRSSMemory": 0,
+        "ProcessTreePythonVMemory": 0,
+        "ProcessTreePythonRSSMemory": 0,
+        "ProcessTreeOtherVMemory": 0,
+        "ProcessTreeOtherRSSMemory": 0,
+        "MinorGCCount": 0,
+        "MinorGCTime": 0,
+        "MajorGCCount": 0,
+        "MajorGCTime": 0,
+        "TotalGCTime": 0,
+        "ConcurrentGCCount": 0,
+        "ConcurrentGCTime": 0
+      },
+      "isShufflePushEnabled": false,
+      "shuffleMergersCount": 0
+    }
+  ],
+  "tasks": [
+    {
+      "taskId": 24,
+      "index": 0,
+      "attempt": 0,
+      "partitionId": 0,
+      "launchTime": "2026-10-25T09:48:49.605GMT",
+      "duration": 133,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "PROCESS_LOCAL",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 1,
+        "executorDeserializeCpuTime": 0,
+        "executorRunTime": 129,
+        "executorCpuTime": 93750000,
+        "resultSize": 1816,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 2500
+        },
+        "outputMetrics": {
+          "bytesWritten": 0,
+          "recordsWritten": 0
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 0,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 0,
+          "recordsRead": 0,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 29595,
+          "writeTime": 44403700,
+          "recordsWritten": 2500
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 25,
+      "index": 1,
+      "attempt": 0,
+      "partitionId": 1,
+      "launchTime": "2026-10-25T09:48:49.605GMT",
+      "duration": 131,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "PROCESS_LOCAL",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 2,
+        "executorDeserializeCpuTime": 0,
+        "executorRunTime": 125,
+        "executorCpuTime": 93750000,
+        "resultSize": 1816,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 2500
+        },
+        "outputMetrics": {
+          "bytesWritten": 0,
+          "recordsWritten": 0
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 0,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 0,
+          "recordsRead": 0,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 29242,
+          "writeTime": 43820200,
+          "recordsWritten": 2500
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 4,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 26,
+      "index": 2,
+      "attempt": 0,
+      "partitionId": 2,
+      "launchTime": "2026-10-25T09:48:49.736GMT",
+      "duration": 56,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "PROCESS_LOCAL",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 1,
+        "executorDeserializeCpuTime": 0,
+        "executorRunTime": 53,
+        "executorCpuTime": 31250000,
+        "resultSize": 1816,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 2500
+        },
+        "outputMetrics": {
+          "bytesWritten": 0,
+          "recordsWritten": 0
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 0,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 0,
+          "recordsRead": 0,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 29757,
+          "writeTime": 35613300,
+          "recordsWritten": 2500
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 2,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 27,
+      "index": 3,
+      "attempt": 0,
+      "partitionId": 3,
+      "launchTime": "2026-10-25T09:48:49.738GMT",
+      "duration": 57,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "PROCESS_LOCAL",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 0,
+        "executorDeserializeCpuTime": 0,
+        "executorRunTime": 54,
+        "executorCpuTime": 31250000,
+        "resultSize": 1773,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 2500
+        },
+        "outputMetrics": {
+          "bytesWritten": 0,
+          "recordsWritten": 0
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 0,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 0,
+          "recordsRead": 0,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 29019,
+          "writeTime": 34000600,
+          "recordsWritten": 2500
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 28,
+      "index": 0,
+      "attempt": 0,
+      "partitionId": 0,
+      "launchTime": "2026-10-25T09:48:49.887GMT",
+      "duration": 537,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 47,
+        "executorDeserializeCpuTime": 31250000,
+        "executorRunTime": 484,
+        "executorCpuTime": 171875000,
+        "resultSize": 4868,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 1,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2838,
+          "recordsWritten": 313
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3706,
+          "recordsRead": 313,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 5,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 29,
+      "index": 1,
+      "attempt": 0,
+      "partitionId": 1,
+      "launchTime": "2026-10-25T09:48:49.887GMT",
+      "duration": 536,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 47,
+        "executorDeserializeCpuTime": 31250000,
+        "executorRunTime": 484,
+        "executorCpuTime": 218750000,
+        "resultSize": 4868,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 1,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2840,
+          "recordsWritten": 313
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3723,
+          "recordsRead": 313,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 4,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 30,
+      "index": 2,
+      "attempt": 0,
+      "partitionId": 2,
+      "launchTime": "2026-10-25T09:48:50.423GMT",
+      "duration": 63,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 21,
+        "executorDeserializeCpuTime": 31250000,
+        "executorRunTime": 38,
+        "executorCpuTime": 15625000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2815,
+          "recordsWritten": 313
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3645,
+          "recordsRead": 313,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 4,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 31,
+      "index": 3,
+      "attempt": 0,
+      "partitionId": 3,
+      "launchTime": "2026-10-25T09:48:50.423GMT",
+      "duration": 63,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 23,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 36,
+        "executorCpuTime": 15625000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2820,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3645,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 4,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 32,
+      "index": 4,
+      "attempt": 0,
+      "partitionId": 4,
+      "launchTime": "2026-10-25T09:48:50.485GMT",
+      "duration": 43,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 18,
+        "executorDeserializeCpuTime": 31250000,
+        "executorRunTime": 21,
+        "executorCpuTime": 15625000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2812,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3682,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 4,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 33,
+      "index": 5,
+      "attempt": 0,
+      "partitionId": 5,
+      "launchTime": "2026-10-25T09:48:50.486GMT",
+      "duration": 41,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 17,
+        "executorDeserializeCpuTime": 31250000,
+        "executorRunTime": 21,
+        "executorCpuTime": 15625000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2820,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3647,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 34,
+      "index": 6,
+      "attempt": 0,
+      "partitionId": 6,
+      "launchTime": "2026-10-25T09:48:50.527GMT",
+      "duration": 66,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 22,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 41,
+        "executorCpuTime": 31250000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2816,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3687,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 35,
+      "index": 7,
+      "attempt": 0,
+      "partitionId": 7,
+      "launchTime": "2026-10-25T09:48:50.527GMT",
+      "duration": 66,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 21,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 41,
+        "executorCpuTime": 31250000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2809,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3601,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 4,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 36,
+      "index": 8,
+      "attempt": 0,
+      "partitionId": 8,
+      "launchTime": "2026-10-25T09:48:50.592GMT",
+      "duration": 45,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 19,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 22,
+        "executorCpuTime": 15625000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2828,
+          "recordsWritten": 314
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3689,
+          "recordsRead": 314,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 4,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 37,
+      "index": 9,
+      "attempt": 0,
+      "partitionId": 9,
+      "launchTime": "2026-10-25T09:48:50.593GMT",
+      "duration": 44,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 19,
+        "executorDeserializeCpuTime": 0,
+        "executorRunTime": 22,
+        "executorCpuTime": 31250000,
+        "resultSize": 4782,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2850,
+          "recordsWritten": 314
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3672,
+          "recordsRead": 314,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 38,
+      "index": 10,
+      "attempt": 0,
+      "partitionId": 10,
+      "launchTime": "2026-10-25T09:48:50.636GMT",
+      "duration": 65,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 21,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 41,
+        "executorCpuTime": 15625000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2846,
+          "recordsWritten": 314
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3676,
+          "recordsRead": 314,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 39,
+      "index": 11,
+      "attempt": 0,
+      "partitionId": 11,
+      "launchTime": "2026-10-25T09:48:50.637GMT",
+      "duration": 64,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 21,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 41,
+        "executorCpuTime": 15625000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2843,
+          "recordsWritten": 314
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3714,
+          "recordsRead": 314,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 2,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 40,
+      "index": 12,
+      "attempt": 0,
+      "partitionId": 12,
+      "launchTime": "2026-10-25T09:48:50.701GMT",
+      "duration": 46,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 20,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 23,
+        "executorCpuTime": 31250000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2811,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3643,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 41,
+      "index": 13,
+      "attempt": 0,
+      "partitionId": 13,
+      "launchTime": "2026-10-25T09:48:50.701GMT",
+      "duration": 46,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 20,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 22,
+        "executorCpuTime": 15625000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2830,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3738,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 4,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 42,
+      "index": 14,
+      "attempt": 0,
+      "partitionId": 14,
+      "launchTime": "2026-10-25T09:48:50.746GMT",
+      "duration": 64,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 19,
+        "executorDeserializeCpuTime": 0,
+        "executorRunTime": 42,
+        "executorCpuTime": 15625000,
+        "resultSize": 4782,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2825,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3683,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 43,
+      "index": 15,
+      "attempt": 0,
+      "partitionId": 15,
+      "launchTime": "2026-10-25T09:48:50.747GMT",
+      "duration": 63,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 19,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 41,
+        "executorCpuTime": 15625000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2824,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3678,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 44,
+      "index": 16,
+      "attempt": 0,
+      "partitionId": 16,
+      "launchTime": "2026-10-25T09:48:50.810GMT",
+      "duration": 37,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 16,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 18,
+        "executorCpuTime": 15625000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2825,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3692,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 45,
+      "index": 17,
+      "attempt": 0,
+      "partitionId": 17,
+      "launchTime": "2026-10-25T09:48:50.810GMT",
+      "duration": 37,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 16,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 18,
+        "executorCpuTime": 15625000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2815,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3671,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 46,
+      "index": 18,
+      "attempt": 0,
+      "partitionId": 18,
+      "launchTime": "2026-10-25T09:48:50.846GMT",
+      "duration": 31,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 13,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 15,
+        "executorCpuTime": 15625000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2821,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3695,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 47,
+      "index": 19,
+      "attempt": 0,
+      "partitionId": 19,
+      "launchTime": "2026-10-25T09:48:50.846GMT",
+      "duration": 31,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 13,
+        "executorDeserializeCpuTime": 0,
+        "executorRunTime": 15,
+        "executorCpuTime": 15625000,
+        "resultSize": 4782,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2822,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3686,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 48,
+      "index": 20,
+      "attempt": 0,
+      "partitionId": 20,
+      "launchTime": "2026-10-25T09:48:50.877GMT",
+      "duration": 29,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 13,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 13,
+        "executorCpuTime": 15625000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2818,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3633,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 49,
+      "index": 21,
+      "attempt": 0,
+      "partitionId": 21,
+      "launchTime": "2026-10-25T09:48:50.877GMT",
+      "duration": 29,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 12,
+        "executorDeserializeCpuTime": 0,
+        "executorRunTime": 14,
+        "executorCpuTime": 31250000,
+        "resultSize": 4782,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2819,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3673,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 50,
+      "index": 22,
+      "attempt": 0,
+      "partitionId": 22,
+      "launchTime": "2026-10-25T09:48:50.905GMT",
+      "duration": 31,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 14,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 14,
+        "executorCpuTime": 15625000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2824,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3682,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 51,
+      "index": 23,
+      "attempt": 0,
+      "partitionId": 23,
+      "launchTime": "2026-10-25T09:48:50.906GMT",
+      "duration": 31,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 14,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 13,
+        "executorCpuTime": 15625000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2812,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3701,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 4,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 52,
+      "index": 24,
+      "attempt": 0,
+      "partitionId": 24,
+      "launchTime": "2026-10-25T09:48:50.935GMT",
+      "duration": 42,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 18,
+        "executorDeserializeCpuTime": 0,
+        "executorRunTime": 20,
+        "executorCpuTime": 15625000,
+        "resultSize": 4825,
+        "jvmGcTime": 4,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2833,
+          "recordsWritten": 313
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3681,
+          "recordsRead": 313,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 4,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 53,
+      "index": 25,
+      "attempt": 0,
+      "partitionId": 25,
+      "launchTime": "2026-10-25T09:48:50.936GMT",
+      "duration": 41,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 17,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 20,
+        "executorCpuTime": 31250000,
+        "resultSize": 4868,
+        "jvmGcTime": 4,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2823,
+          "recordsWritten": 313
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3641,
+          "recordsRead": 313,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 4,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 54,
+      "index": 26,
+      "attempt": 0,
+      "partitionId": 26,
+      "launchTime": "2026-10-25T09:48:50.976GMT",
+      "duration": 34,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 14,
+        "executorDeserializeCpuTime": 0,
+        "executorRunTime": 16,
+        "executorCpuTime": 0,
+        "resultSize": 4739,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2838,
+          "recordsWritten": 313
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3653,
+          "recordsRead": 313,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 4,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 55,
+      "index": 27,
+      "attempt": 0,
+      "partitionId": 27,
+      "launchTime": "2026-10-25T09:48:50.976GMT",
+      "duration": 34,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 14,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 16,
+        "executorCpuTime": 15625000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2819,
+          "recordsWritten": 313
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3671,
+          "recordsRead": 313,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 4,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 56,
+      "index": 28,
+      "attempt": 0,
+      "partitionId": 28,
+      "launchTime": "2026-10-25T09:48:51.009GMT",
+      "duration": 38,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 17,
+        "executorDeserializeCpuTime": 0,
+        "executorRunTime": 18,
+        "executorCpuTime": 15625000,
+        "resultSize": 4782,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2831,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3700,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 57,
+      "index": 29,
+      "attempt": 0,
+      "partitionId": 29,
+      "launchTime": "2026-10-25T09:48:51.010GMT",
+      "duration": 37,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 18,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 16,
+        "executorCpuTime": 0,
+        "resultSize": 4782,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2831,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3697,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 58,
+      "index": 30,
+      "attempt": 0,
+      "partitionId": 30,
+      "launchTime": "2026-10-25T09:48:51.046GMT",
+      "duration": 32,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 14,
+        "executorDeserializeCpuTime": 0,
+        "executorRunTime": 15,
+        "executorCpuTime": 15625000,
+        "resultSize": 4782,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2830,
+          "recordsWritten": 312
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3655,
+          "recordsRead": 312,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    },
+    {
+      "taskId": 59,
+      "index": 31,
+      "attempt": 0,
+      "partitionId": 31,
+      "launchTime": "2026-10-25T09:48:51.047GMT",
+      "duration": 32,
+      "executorId": "driver",
+      "host": "kubernetes.docker.internal",
+      "status": "SUCCESS",
+      "taskLocality": "ANY",
+      "speculative": false,
+      "accumulatorUpdates": [],
+      "taskMetrics": {
+        "executorDeserializeTime": 15,
+        "executorDeserializeCpuTime": 15625000,
+        "executorRunTime": 14,
+        "executorCpuTime": 15625000,
+        "resultSize": 4825,
+        "jvmGcTime": 0,
+        "resultSerializationTime": 0,
+        "memoryBytesSpilled": 0,
+        "diskBytesSpilled": 0,
+        "peakExecutionMemory": 0,
+        "inputMetrics": {
+          "bytesRead": 0,
+          "recordsRead": 0
+        },
+        "outputMetrics": {
+          "bytesWritten": 2832,
+          "recordsWritten": 313
+        },
+        "shuffleReadMetrics": {
+          "remoteBlocksFetched": 0,
+          "localBlocksFetched": 4,
+          "fetchWaitTime": 0,
+          "remoteBytesRead": 0,
+          "remoteBytesReadToDisk": 0,
+          "localBytesRead": 3653,
+          "recordsRead": 313,
+          "remoteReqsDuration": 0,
+          "shufflePushReadMetrics": {
+            "corruptMergedBlockChunks": 0,
+            "mergedFetchFallbackCount": 0,
+            "remoteMergedBlocksFetched": 0,
+            "localMergedBlocksFetched": 0,
+            "remoteMergedChunksFetched": 0,
+            "localMergedChunksFetched": 0,
+            "remoteMergedBytesRead": 0,
+            "localMergedBytesRead": 0,
+            "remoteMergedReqsDuration": 0
+          }
+        },
+        "shuffleWriteMetrics": {
+          "bytesWritten": 0,
+          "writeTime": 0,
+          "recordsWritten": 0
+        }
+      },
+      "executorLogs": {},
+      "schedulerDelay": 3,
+      "gettingResultTime": 0
+    }
+  ]
+}

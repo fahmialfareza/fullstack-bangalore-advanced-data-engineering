@@ -1,0 +1,18 @@
+[
+  {
+    "variant": "no_cache",
+    "median_seconds": 0.33558210000001054,
+    "min_seconds": 0.33558210000001054,
+    "max_seconds": 0.33558210000001054,
+    "runs": 1,
+    "correct": true
+  },
+  {
+    "variant": "cache",
+    "median_seconds": 0.4392454000003454,
+    "min_seconds": 0.4392454000003454,
+    "max_seconds": 0.4392454000003454,
+    "runs": 1,
+    "correct": true
+  }
+]
