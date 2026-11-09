@@ -1,0 +1,4 @@
+ipykernel
+nbclient
+nbformat
+pyspark==4.2.0
