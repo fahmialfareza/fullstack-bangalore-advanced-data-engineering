@@ -1,0 +1,3 @@
+v1
+{"path":"file:///Users/fahmialfareza/Code/learning/data-engineering/fullstack-bangalore-advanced-data-engineering/mini-projects/6-sparks/output/coingecko_agg/part-00000-fc9b11bb-8ad6-430e-96cb-092f0d379b3f-c000.snappy.parquet","size":2017,"isDir":false,"modificationTime":1794205987931,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///Users/fahmialfareza/Code/learning/data-engineering/fullstack-bangalore-advanced-data-engineering/mini-projects/6-sparks/output/coingecko_agg/part-00001-a72aec2f-be6d-46d5-8d06-a6327d97306c-c000.snappy.parquet","size":2134,"isDir":false,"modificationTime":1794205987931,"blockReplication":1,"blockSize":33554432,"action":"add"}
